@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Plugins</title>
+    <link rel="stylesheet" type="text/css" href="/Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/Style/styles.css" />
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav id="navbarExample" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbarLinks">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SitePoint</a>
+            </div>
+            <div class="collapse navbar-collapse navbarLinks">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#about">About</a></li>
+                    <li class="active"><a href="#contact">Contact Us</a></li>
+                    <li class="active"><a href="#map">Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div data-spy="scroll" data-target="#navbarExample" data-offset="0" class="scrollspy-example">
+        <h4 id="Home">Home</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur ... </p>
+        <h4 id="about">About</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur ... </p>
+        <h4 id="contact">Contact Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur ... </p>
+        <h4 id="map">Map</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur ... </p>
+    </div>
+
+    <div class="dropdown" id="myDropdown">
+        <div class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-dissmiss="alert">&times;</button>
+        </div>
+        <div class="alert alert-success">
+            Amount has been transferred successfully.
+        </div>
+        <a class="myDropdownHandle" data-toggle="dropdown" data-target="#" href="#">
+            Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </div>
+    <button type="button" class="btn btn-lg btn-default" data-toggle="button">
+        Toggle Me!
+    </button>
+
+    <div class="btn-group" data-toggle="button">
+        <label class="btn btn-default">
+            <input type="checkbox" />Option1
+        </label>
+        <label class="btn btn-default">
+            <input type="checkbox" />Option2
+        </label>
+        <label class="btn btn-default">
+            <input type="checkbox" />Option3
+        </label>
+    </div>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+        <li><a href="#profile" data-toggle="tab">Profile</a></li>
+        <li><a href="#messages" data-toggle="tab">Messages</a></li>
+        <li><a href="#settings" data-toggle="tab">Settings</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="home">
+            <h3>The home</h3>
+        </div>
+        <div class="tab-pane fade" id="profile">
+            <h3>The profile</h3>
+        </div>
+        <div class="tab-pane fade" id="messages">
+            <h3>Messages central</h3>
+        </div>
+        <div class="tab-pane fade" id="settings">
+            <h3>Setting panel</h3>
+        </div>
+    </div>
+    <button type="button" class="btn btn-default tooltipButton" data-toggle="tooltip" data-placement="bottom" title="I am a Bootstrap button">
+        Who am I?
+    </button>
+
+    <button type="button" class="btn btn-danger popoverButton" data-toggle="popover" data-placement="bottom" data-content="Lorem Ipsum Donor." title="This is a demo popover">
+        Click Me!
+    </button>
+    <div id="bestCarsCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#bestCarsCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bestCarsCarousel" data-slide-to="1"></li>
+            <li data-target="#bestCarsCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="../img/car1.jpg" />
+                <div class="carousel-caption">
+                    <h3>Car 1</h3>
+                    <p>Lorem ipsum dolor...</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../img/car2.jpg" />
+                <div class="carousel-caption">
+                    <h3>Car 2</h3>
+                    <p>Lorem ipsum dolor...</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../img/car3.jpg" />
+                <div class="carousel-caption">
+                    <h3>Car 3</h3>
+                    <p>Lorem ipsum dolor...</p>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#bestCarsCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#bestCarsCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <script src="/Scripts/jquery-2.1.3.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var options = {
+            interval: 7000,
+            pause: 'hover',
+            wrap: true
+        };
+        $('#bestCarsCarousel').carousel(options);
+
+        var options = {
+            animation: true,
+            placement: "top"
+        };
+
+        $('.popoverButton').popover(options);
+
+        $('.nav-tabs li a').on('show.bs.tab', function () {
+            console.log("Opening tab");
+        });
+        $('.nav-tabs li a').on('shown.bs.tab', function () {
+            console.log("Tab opened!");
+        });
+
+        $('#navbarExample').on('activate.bs.scrollspy', function () {
+            console.log("New link highlighted!");
+        });
+
+        $(document).ready(function () {
+            $('.myDropdownHandler').dropdown('toggle');
+
+            $('#myDropdown').on('show.bs.dropdown', function () {
+                console.log("Opening dropdown..");
+            });
+            $('#myDropdown').on('shown.bs.dropdown', function () {
+                console.log("Dropdown opened..");
+            });
+            $('#myDropdown').on('hide.bs.dropdown', function () {
+                console.log("Hiding dropdown..");
+            });
+            $('#myDropdown').on('hidden.bs.dropdown', function () {
+                console.log("Dropdown hidden..");
+            });
+
+            $('.alert').on('close.bs.alert', function () {
+                console.log("Closing alert...");
+            });
+
+            $('.alert').on('close.bs.alert', function () {
+                console.log("Alert closed!");
+            });
+        });
+    </script>
+
+</body>
+</html>

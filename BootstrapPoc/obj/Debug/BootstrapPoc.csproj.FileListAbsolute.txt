@@ -1,0 +1,6 @@
+c:\users\eva.mehesz\documents\visual studio 2013\Projects\BootstrapPoc\BootstrapPoc\bin\BootstrapPoc.dll.config
+c:\users\eva.mehesz\documents\visual studio 2013\Projects\BootstrapPoc\BootstrapPoc\bin\BootstrapPoc.dll
+c:\users\eva.mehesz\documents\visual studio 2013\Projects\BootstrapPoc\BootstrapPoc\bin\BootstrapPoc.pdb
+c:\users\eva.mehesz\documents\visual studio 2013\Projects\BootstrapPoc\BootstrapPoc\obj\Debug\BootstrapPoc.csprojResolveAssemblyReference.cache
+c:\users\eva.mehesz\documents\visual studio 2013\Projects\BootstrapPoc\BootstrapPoc\obj\Debug\BootstrapPoc.dll
+c:\users\eva.mehesz\documents\visual studio 2013\Projects\BootstrapPoc\BootstrapPoc\obj\Debug\BootstrapPoc.pdb
